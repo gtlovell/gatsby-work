@@ -1,4 +1,4 @@
-import nightOwl from '@theme-ui/prism/presets/night-owl';
+import dracula from '@theme-ui/prism/presets/dracula';
 
 export default {
   colors: {
@@ -17,7 +17,7 @@ export default {
   },
   styles: {
     pre: {
-      ...nightOwl,
+      ...dracula,
       overflowX: 'scroll',
       p: 3,
     },
@@ -53,7 +53,7 @@ export default {
         mr: 0,
       },
       ':focus': {
-        outline: t => `3px solid ${t.colors.background}`,
+        outline: (t) => `3px solid ${t.colors.background}`,
         outlineOffset: 3,
       },
     },
@@ -86,7 +86,7 @@ export default {
   button: {
     primary: {
       bg: 'primary',
-      border: t => `2px solid ${t.colors.primary}`,
+      border: (t) => `2px solid ${t.colors.primary}`,
       borderRadius: 6,
       color: 'background',
       cursor: 'pointer',
@@ -102,7 +102,7 @@ export default {
     hollow: {
       alignSelf: 'flex-start',
       bg: 'transparent',
-      border: t => `2px solid ${t.colors.background}`,
+      border: (t) => `2px solid ${t.colors.background}`,
       borderRadius: 6,
       color: 'background',
       cursor: 'pointer',
@@ -122,7 +122,7 @@ export default {
     },
   },
   'react-live': {
-    border: t => `1px solid ${t.colors.muted}`,
+    border: (t) => `1px solid ${t.colors.muted}`,
     p: 4,
   },
   'prism-highlight': {
