@@ -1,6 +1,9 @@
 var plugins = [{
       plugin: require('/Users/garrettlovell/_codes/_GASTBY/gatsby-intermediate/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
       options: {"plugins":[],"defaultLayouts":{"default":"/Users/garrettlovell/_codes/_GASTBY/gatsby-intermediate/packages/gatsby-theme-docs/src/components/layout.js"}},
+    },{
+      plugin: require('/Users/garrettlovell/_codes/_GASTBY/gatsby-intermediate/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
